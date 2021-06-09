@@ -1,7 +1,7 @@
 {
-  "name": "sigmavia",
+  "name": "domain_service",
   "version": "1.0.0",
-  "description": "sigmavia",
+  "description": "domain_service",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

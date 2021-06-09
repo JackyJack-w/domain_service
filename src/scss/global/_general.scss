@@ -11,6 +11,8 @@ body {
   //color: $white;  
   //direction: rtl;  
   background-image: linear-gradient(to bottom, #002537, #0e0019);
+  background-repeat: no-repeat;
+  
 }
 
 .clear {
@@ -35,7 +37,7 @@ body {
 
 * {
   border: 0px solid red;
-  outline: 0px solid red!important;
+  outline: 1px solid red!important;
 }
 
 a {
