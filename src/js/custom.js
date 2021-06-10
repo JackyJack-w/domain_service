@@ -30,4 +30,13 @@ function menuBtn(){
     };
 }
 
+function menuBtnRight(){
+
+    let elem = document.getElementById("main-menu-right");
+    elem.style.display = 'block';
+    let close = document.getElementById("close-menu-right");
+    close.onclick = function(){
+        elem.style.display = 'none';
+    };
+}
 

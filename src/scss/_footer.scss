@@ -1,9 +1,68 @@
 .footer {
+
+
+    position: absolute;
+        bottom: 15px;
+        left: 0;
+        width: 100%;
+    .blocks{
+        position: relative;
+
+        .col-4{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            .logo-down{
+
+                background-image: url('../img/domain-copy.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 12px;
+                width: 68px;
+                        
+            }
+        }
+
+        .message-block{
+            position: absolute;
+            right: 40px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-image: linear-gradient(to bottom, #004d72, #002b54);
+
+            background-repeat: no-repeat;
+            background-position: center;
+            bottom: 1px;
+            overflow: hidden;
+
+           .block-img{
+               
+                background: url('../img/clip-2.png');
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+           }
+        }
+       
+    }
+   
+ 
+    
     
 
-    @media (min-width: $screen-md-min) {
-        padding-top: 12em;
-    }
+
+   
+
+
+   
+
+   
+
+    // @media (min-width: $screen-md-min) {
+    //     padding-top: 12em;
+    // }
     
    
 }/*end of footer*/
