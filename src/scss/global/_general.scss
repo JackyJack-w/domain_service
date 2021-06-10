@@ -1,6 +1,7 @@
 /*general css style */
 html {
   font-size: 100%; /* This means 16px */
+  height: 100vh;
 }
 body {
   position: relative;
@@ -12,6 +13,7 @@ body {
   //direction: rtl;  
   background-image: linear-gradient(to bottom, #002537, #0e0019);
   background-repeat: no-repeat;
+  background-size: cover;
   
 }
 
@@ -37,7 +39,7 @@ body {
 
 * {
   border: 0px solid red;
-  outline: 1px solid red!important;
+  outline: 0px solid red!important;
 }
 
 a {
@@ -108,4 +110,18 @@ p{
   src:  url('../fonts/montserrat/Montserrat-Bold.ttf') format('ttf'),
         url('../fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
         url('../fonts/montserrat/Montserrat-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+ 
+  src:  url('../fonts/Inter-Regular.ttf') format('ttf'),
+        url('../fonts/Inter-Regular.woff') format('woff'),
+        url('../fonts/Inter-Regular.woff2') format('woff2')
+   ;
+  
+
+
 }

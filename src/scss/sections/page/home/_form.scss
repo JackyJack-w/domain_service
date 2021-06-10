@@ -4,7 +4,22 @@
     .col-sm-12{
         margin: 0;
         padding: 0;
+
+        
     }
+
+    .Upper_caption{
+            font-family: 'Inter';
+            font-weight: normal ;
+            font-size: 10px;
+            color: $legendback;
+            text-align: left;
+            padding-top: 14px;
+            
+            padding-left: 28px;
+            width: 150px;
+            
+        }
         width: 310px;
         margin-left: auto;
         margin-right: auto;
@@ -13,19 +28,9 @@
 
         .text_input_area{
             margin-bottom: 11px;
+            padding-top: 10px;
 
-        .Upper_caption{
-            font-family: 'Montserrat';
-            font-weight: normal ;
-            font-size: 10px;
-            color: #888888;
-            text-align: left;
-            padding-top: 14px;
-            padding-bottom: 8px;
-            padding-left: 28px;
-            width: 150px;
-            
-        }
+        
 
        .input_search{
 
@@ -50,7 +55,7 @@
             border: 1px solid #cccc;
             background: #111111;
             padding-left: 15px;
-            font-family: 'Montserrat';
+            font-family: 'Inter';
             font-size: 18px;
             font-weight: normal;
             color: #fff;
@@ -70,21 +75,25 @@
         
         .text_input_area{
 
-            font-family: 'Montserrat';
+            font-family: 'Inter';
             font-size: 14px;
             font-weight: normal;
             color: #cccccc;
            
             position: relative;
-
+            z-index: 1;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1));
+            border-radius: 15px;
             .row{
 
-                display: flex;
-                justify-content: space-between;
+                display: flex;                                                                                          
+           
+                padding-left: 25px;
                 .col-sm-4{
                     display: flex;
                     flex-direction: row;
                     position: relative;
+                    justify-content: left;
 
                     
                     .input-check[type="checkbox"] {
@@ -95,9 +104,10 @@
 
                     .label_checkbox{
 
+                        display: inline-block;
                         &::before{
                             content: '';
-                            display: block;
+                            display: inline-block;
                             width: 16px;
                             height: 16px;
                             
@@ -112,7 +122,7 @@
                         
 
                         &:hover{
-                            background: yellows;
+                           
                         }
 
                         
@@ -123,7 +133,9 @@
 
                     .checked{
                         &::before{
-                            background: violet!important;
+                            
+                            background: $black url('../img/checkBox.png');
+                            background-repeat: no-repeat;
                         }
                     }
 

@@ -1,74 +1,110 @@
 .header {    
     
 
+   .topMenu{
+    width: 30%;
+    top: 16px;
+    position: relative;
+   }
     
-   .menu{
+    .menu{
 
+        position: relative;
+        float: left;
+        .menuBtn{
 
-       position: relative;
-
-       
-        .menu-ul{
-            position: relative;
             width: 45px;
             height: 45px;
-            top: 15px;
-
-            &:before{
-            content: '';
-            display: block;
-            width: 45px;
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 45px;
-            
-            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
             background-color: $menubackground;
-            border-radius:  50%; 
-            z-index: 1;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('../img/line-shape.png');
+           
+        }
+
+        .pop-Up{
+            position: absolute;
+            box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+            top: -15px;
+            left: -15px;
+            width: 100vw;
+            height: 100vh;
+            z-index: 996;
+            display: none;
+
+            .menu-Drop-Down{
+                width: 100%;
+                max-width: 245px;
+                background-color: $menubackground;
+                height: 100%;
+                padding: 15px 0 0 30px;
+
+                p{
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-bottom: 30px;
                 }
 
+                ul{
 
-            &:after{
-            content: '';
-            background-image: url('../img/line-shape.png');
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 2;
-            height: 100%;
-            width: 100%;
-            background-repeat: no-repeat;
-            background-position: center center;
-                                
+                    list-style-type: none;
+                    li{
+                        margin-bottom: 25px;
+                        display: block;
 
+                   
+
+                        a{
+                            font-family: 'Inter';
+                            font-size: 16px;
+                            text-decoration: none;
+                            color: $legendback;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                       
             }
-
+                .close-menu{
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                    width: 45px;
+                    height: 45px;
+                    background-color: $menubackground;
+                    border-radius: 50%;
+                    background-image: url('../img/strelka.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    cursor: pointer;
+                    pointer-events: visible;
+                }
+           
 
         }
+    }
+        
       
        
-   }
+   
 
-   .col-sm-12{
+   .topMenuLogo{
        /*end of first row*/
         position: relative;
-        top: 16px;
+       top: 16px;
+        width: 30%;
         .logo {
-            
-            
-        background: url('../img/domain.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        width: 72px;
-        height: 32px;
-        display: block;
-        margin: auto;
-        
-
+            background: url('../img/domain.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 72px;
+            height: 32px;
+            display: block;
+            margin: auto;
+            margin-top: 66px;
             @media (min-width: $screen-md-min) {                     
             }
             @media (min-width: $screen-lg-min) { 
@@ -77,75 +113,62 @@
         }/*end of logo*/
    }
 
-   .row{
+   
 
-            .col-sm-6{
+    .topMenu{
+
+        position: relative;
+        
+       width: 30%;
+        .accContainer{
 
             position: relative;
+            top: -15px;
 
-            width: 50%;
-            .accContainer{
+            .account{
 
-                position: relative;
-                .account{
-
-                    position: absolute;
-                    width: 45px;
-                    height: 45px;
-                    top: 15px;
-                    right: 0;
-        
-                    &:before{
-        
-                    content: '';
-                    display: block;
-                    width: 45px;
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                    height: 45px;
-        
-                    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
-                    background-color: $menubackground;
-                    border-radius:  50%; 
-                    z-index: 1;
-                    }
-        
-                    &:after{
-                    content: '';
-                    background-image: url('../img/account.png');
-                    display: block;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    z-index: 2;
-                    height: 100%;
-                    width: 100%;
-                    background-repeat: no-repeat;
-                    background-position: center center;
-                    }
+                position: absolute;
+                width: 45px;
+                height: 45px;
+                top: 15px;
+                right: 0;
+    
+                &:before{
+    
+                content: '';
+                display: block;
+                width: 45px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 45px;
+    
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+                background-color: $menubackground;
+                border-radius:  50%; 
+                z-index: 1;
                 }
-
+    
+                &:after{
+                content: '';
+                background-image: url('../img/account.png');
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 2;
+                height: 100%;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-position: center center;
+                }
             }
-           
+
+        }
+        
 
     }
-}
-   
-    /*end of first row*/
 
-    .logo {
-        
-        
-        
-       
-
-        @media (min-width: $screen-md-min) {                     
-        }
-        @media (min-width: $screen-lg-min) { 
-         
-        }
-    }/*end of logo*/
 
     .title{
         font-family: 'Montserrat';

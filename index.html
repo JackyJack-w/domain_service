@@ -15,47 +15,49 @@
 
 <body class="container-fluid wrap">
     <div class="header">
-        <div class="row" >
-            <div class="col-sm-6">
+        <div class="row firstRow" >
+            <div class="col-sm-4 topMenu ">
+               
                 <div class="menu">
-                    <ul class="menu-ul">
-                      
-                        <li class="menu-item">
-                            <a href="" class="menu-link">New domain name</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="" class="menu-link">Pricing</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="" class="menu-link">Blog</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="" class="menu-link">About</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="" class="menu-link">Contact us</a>
-                        </li>
-                    </ul>
+                     <button class="menuBtn" id="menuBtn" onclick="menuBtn()"></button>
+                    <div class="pop-Up" id="main-menu"> 
+                        <div class="menu-Drop-Down">
+                            <p class="menu-header">Menu</p>
+                        <ul>
+                            <li><a href="#">New domain name</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                        <div class="close-menu" id="close-menu"></div>
+
+                        </div>
+                        
+                    </div>
+                    
+
                 </div>
             </div>
 
+         
 
-            <div class="col-sm-6">
+            <div class="col-sm-4 topMenuLogo">
+                <div class="logo"></div>
+            </div>
+                
+            
+            
+       
+
+            <div class="col-sm-4 topMenu">
                 <div class="accContainer">
                 <div class="account"></div>
                 </div>
              
             </div>
         </div>            
-        <div class="row">
-
-            <div class="col-sm-12">
-                <div class="logo"></div>
-            </div>
-                
-            
-            
-        </div>
+       
         <div class="row">
             <div class="col-sm-12">
             <h1 class="title">Your own <br> internet-name</h1>
@@ -68,21 +70,22 @@
         <div class="row">
             <div class="col-sm-12">
                 <form action="">
+                     <legend class="Upper_caption"> find an available name</legend>
                     <fieldset class="text_input_area">
-                        <legend class="Upper_caption"> find an available name</legend>
+                       
                         <div class="input_search"> <input type="text" placeholder="Testname" class="input_text"> </div>
                         <div class="row">
         
                             <div class="col-sm-4"> 
                                 <input type="checkbox" id="ua" class="input-check">
-                                <label  onclick="checkLabel()" for="ua" class="label_checkbox" >.ua</label></div>
+                                <label  id="test3" onclick="checkLabel(this)" for="ua" class="label_checkbox" >.ua</label></div>
                             <div class="col-sm-4">
                                 <input type="checkbox" id="com.ua" class="input-check">
-                                <label  onclick="checkLabel()" for="com.ua" class="label_checkbox checked">.com.ua</label>
+                                <label  onclick="checkLabel(this)" for="com.ua" class="label_checkbox">.com.ua</label>
                             </div>
                             <div class="col-sm-4">
                                 <input type="checkbox" id="com" class="input-check">
-                                <label onclick="checkLabel()" for="com" class="label_checkbox">.com</label>
+                                <label onclick="checkLabel(this)" for="com" class="label_checkbox">.com</label>
                             </div>
                         </div>
         
@@ -90,10 +93,10 @@
         
                             <div class="col-sm-4">  
                                 <input type="checkbox" id="net" class="input-check">
-                                <label  onclick="checkLabel()" for="net" class="label_checkbox">.net</label></div>
+                                <label  onclick="checkLabel(this)" for="net" class="label_checkbox">.net</label></div>
                             <div class="col-sm-4">  
                                 <input type="checkbox" id="org" class="input-check">
-                                <label  onclick="checkLabel()" for="org" class="label_checkbox">.org</label></div>
+                                <label  onclick="checkLabel(this)" for="org" class="label_checkbox">.org</label></div>
                             <div class="col-sm-4"></div>
                         </div>
                     </fieldset>
